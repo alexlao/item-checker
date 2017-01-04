@@ -23,8 +23,18 @@ def alert_email(user, pwd, recipient, subject, body):
         server.login(gmail_sender, gmail_senderpwd)  # login to gmail server
         server.sendmail(FROM, TO, message)  # actually perform sending of mail
         server.close()  # end server
-        print
-        'successfully sent the mail'  # alert user mail was sent
+        print 'successfully sent the mail'  # alert user mail was sent
     except Exception as e:  # else tell user it failed and why (exception e)
-        print
-        "failed to send mail, " + str(e)
+        print "failed to send mail, " + str(e)
+
+
+def main():
+
+    with requests.Session() as c
+        url = "https://www.mrporter.com/en-us/mens/adidas_originals/gazelle-suede-sneakers/721301?ppv=2"
+        refresh_time = 120
+        user = "alexlaodevtests@gmail.com"
+        pwd = "mxoi mpdo vmst engj"
+        recipient = "lao.alex97@gmail.com"
+        subject = "Site change"
+        body = "Change At" + str(url)
